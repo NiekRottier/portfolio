@@ -18,4 +18,23 @@ function toggleMenu() {
     }
 }
 
-// Links of projects
+console.log(window.location.pathname);
+
+// Add events to all the projects
+let projectPigeon = document.getElementById("projectPigeon")
+projectPigeon.addEventListener("click", () => window.location.pathname = "public/projects/projectPigeon.html")
+
+let jsai = document.getElementById("jsai")
+jsai.addEventListener("click", () => window.location.pathname = "public/projects/jsai.html")
+
+let reactNotes = document.getElementById("reactNotes")
+reactNotes.addEventListener("click", () => window.location.pathname = "public/projects/reactNotes.html")
+
+let backendApi = document.getElementById("backendApi")
+backendApi.addEventListener("click", () => window.location.pathname = "public/projects/backendApi.html")
+
+let laravelGallery = document.getElementById("laravelGallery")
+laravelGallery.addEventListener("click", () => window.location.pathname = "public/projects/laravelGallery.html")
+
+let nieuwsradar = document.getElementById("nieuwsradar")
+nieuwsradar.addEventListener("click", () => window.location.pathname = "public/projects/nieuwsradar.html")
