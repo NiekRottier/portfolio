@@ -131,16 +131,10 @@ b{
     display: flex;
     justify-content: center;
 
-    .instaIcon, .githubIcon{
-        $size: 60px;
-        height: $size;
-        width: $size;
-
+    .socialIcon{
+        @extend %blue-text;
         margin: 0 10px;
-
         cursor: pointer;
-        background: linear-gradient(120deg, #00C2FF, #F3FCFF);
-        border-radius: 10px;
     }
 }
 
