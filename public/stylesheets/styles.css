@@ -129,19 +129,30 @@ b {
   background: linear-gradient(120deg, #00C2FF, #F3FCFF);
   cursor: pointer;
 }
-#projectsContainer .project:first-child, #projectsContainer .project:first-child .banner {
+#projectsContainer .project:first-child, #projectsContainer .project:first-child img, #projectsContainer .project:first-child .banner {
   border-radius: 20px 20px 0 0;
 }
-#projectsContainer .project:last-child {
+#projectsContainer .project:last-child, #projectsContainer .project:last-child img {
   border-radius: 0 0 20px 20px;
+}
+#projectsContainer .project img {
+  position: relative;
+  left: 2px;
+  top: 2px;
+  height: 256px;
+  width: 256px;
+  object-fit: cover;
 }
 #projectsContainer .project .banner {
   display: flex;
+  flex-direction: column;
   justify-content: center;
   align-items: center;
+  position: relative;
+  top: -260px;
   height: 15%;
   width: 100%;
-  background-color: rgba(255, 255, 255, 0.2);
+  background-color: rgba(0, 0, 0, 0.3);
   backdrop-filter: blur(2px);
   -webkit-backdrop-filter: blur(2px);
   transition: height 300ms ease-out;
@@ -152,8 +163,16 @@ b {
   font-family: "Saira", sans-serif;
   font-size: 24px;
 }
+#projectsContainer .project .banner small {
+  display: none;
+  text-align: center;
+  color: #FBFBFB;
+}
 #projectsContainer .project:hover .banner {
   height: 100%;
+}
+#projectsContainer .project:hover .banner small {
+  display: inline;
 }
 
 footer {

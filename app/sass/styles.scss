@@ -13,6 +13,7 @@
 }
 
 $dark-color: #02001F;
+$light-color: #FBFBFB;
 
 $borderRadius: 20px;
 
@@ -51,7 +52,7 @@ h2{
 }
 
 p{
-    color: #FBFBFB;
+    color: $light-color;
     font-size: 18px;
     padding: 0 5vw;
 }
@@ -157,21 +158,34 @@ b{
 
         cursor: pointer;
 
-        &:first-child, &:first-child .banner{
+        &:first-child, &:first-child img, &:first-child .banner{
             border-radius: $borderRadius $borderRadius 0 0;
         }
-        &:last-child{
+        &:last-child, &:last-child img{
             border-radius: 0 0 $borderRadius $borderRadius;
+        }
+
+        img{
+            position: relative;
+            left: 2px;
+            top: 2px;
+            height: $size - 4px;
+            width: $size - 4px;
+            object-fit: cover;
         }
 
         .banner{
             display: flex;
+            flex-direction: column;
             justify-content: center;
             align-items: center;
 
+            position: relative;
+            top: -$size;
+
             height: 15%;
             width: 100%;
-            background-color: rgba(#ffffff, 0.2);
+            background-color: rgba(#000000, 0.3);
             backdrop-filter: blur(2px);
             -webkit-backdrop-filter: blur(2px);
 
@@ -183,10 +197,20 @@ b{
                 font-family: 'Saira', sans-serif;
                 font-size: 24px;
             }
+
+            small{
+                display: none;
+                text-align: center;
+                color: $light-color;
+            }
         }
 
         &:hover .banner{
             height: 100%;
+
+            small{
+                display: inline;
+            }
         }
     }
 

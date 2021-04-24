@@ -17,3 +17,5 @@ function toggleMenu() {
         menu.style.opacity = 0
     }
 }
+
+// Links of projects

@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -12,6 +13,7 @@
     <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Saira&display=swap" rel="stylesheet">
 </head>
+
 <body>
     <div id="menuButton">
         <div></div>
@@ -26,17 +28,18 @@
         <li><a href="#contact">Contact</a></li>
     </ul>
 
-    <h1>Niek Rottier</h1>
-    <h2 class="undertitle">Portfolio</h2>
-
-    <div id="headingImg"></div>
+    <div id="header">
+        <h1>Niek Rottier</h1>
+        <h2 class="undertitle">Portfolio</h2>
+        <div id="headingImg"></div>
+    </div>
 
     <div id="aboutMe">
         <h2>About me</h2>
         <p>18 years old <br><br>
-            Currently living in Vlissingen, Zeeland <br><br> 
-            2nd year CMGT student @ Hogeschool Rotterdam <br><br> 
-            Likes to play games, watch series & draw</p><br> 
+            Currently living in Vlissingen, Zeeland <br><br>
+            2nd year CMGT student @ Hogeschool Rotterdam <br><br>
+            Likes to play games, watch series & draw</p><br>
 
         <div class="socials">
             <div class="instaIcon"></div>
@@ -46,25 +49,69 @@
 
     <div id="goals">
         <h2>Goals</h2>
-        <p>What do I want to learn and specialize in? 
+        <p>What do I want to learn and specialize in?
             <br><br>
-            I like working on <b>front-end</b> development the most, because the work is very visual and I like to <b>design</b>. 
+            I like working on <b>front-end</b> development the most, because the work is very visual and I like to
+            <b>design</b>.
             With front-end development I get to make the designs reality. <br>
             I can do back-end but I have more fun working on the front-end.
             <br><br>
-            My goal is to be able to design and create all kinds of websites and applications for different customers. 
+            My goal is to be able to design and create all kinds of websites and applications for different customers.
             <br><br>
-            I want to have a broad skillset so that I’m able to do versatile work.</p>
+            I want to have a broad skillset so that I’m able to do versatile work.
+        </p>
     </div>
 
     <div id="projects">
         <h2>Projects</h2>
         <div id="projectsContainer">
-            <div class="project"><div class="banner"><p>Project: Pigeon</p></div></div>
-            <div class="project"><div class="banner"><p>NieuwsRadar</p></div></div>
-            <div class="project"><div class="banner"><p>React Notes</p></div></div>
-            <div class="project"><div class="banner"><p>Back-end API</p></div></div>
-            <div class="project"><div class="banner"><p>Laravel Gallery</p></div></div>
+            <div class="project" id="projectPigeon">
+                <img src="./img/project-pigeon.png">
+                <div class="banner">
+                    <p>Project: Pigeon</p>
+                    <small>TypeScript, OOP</small>
+                </div>
+            </div>
+
+            <div class="project" id="jsai">
+                <img src="./img/js-ai.png">
+                <div class="banner">
+                    <p>JS and AI</p>
+                    <small>JavaScript, AI, ML, Tensorflow.js, ML5.js</small>
+                </div>
+            </div>
+
+            <div class="project" id="reactNotes">
+                <img src="./img/react-notes.png">
+                <div class="banner">
+                    <p>React Notes</p>
+                    <small>JavaScript, React.js, CRUD</small>
+                </div>
+            </div>
+
+            <div class="project" id="backendApi">
+                <img src="./img/backend-api.png">
+                <div class="banner">
+                    <p>Back-end API</p>
+                    <small>JavaScript, Node.js, Express.js, Mongoose, CRUD API</small>
+                </div>
+            </div>
+
+            <div class="project" id="laravelGallery">
+                <img src="./img/laravel-gallery.png">
+                <div class="banner">
+                    <p>Laravel Gallery</p>
+                    <small>PHP, Laravel, MVC</small>
+                </div>
+            </div>
+
+            <div class="project" id="nieuwsradar">
+                <img src="./img/nieuwsradar.png">
+                <div class="banner">
+                    <p>NieuwsRadar</p>
+                    <small>Adobe XD</small>
+                </div>
+            </div>
         </div>
     </div>
 
@@ -81,6 +128,7 @@
 
     <footer>&copy; 2021 - Niek Rottier</footer>
 
-<script src="./js/app.js"></script>
+    <script src="./js/app.js"></script>
 </body>
+
 </html>
