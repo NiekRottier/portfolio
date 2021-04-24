@@ -1,0 +1,168 @@
+h2, h1 {
+  background: linear-gradient(120deg, #00FF94, #E9FFF6);
+  background-clip: text;
+  -webkit-background-clip: text;
+  color: transparent;
+}
+
+h2.undertitle {
+  background: linear-gradient(120deg, #00C2FF, #F3FCFF);
+  background-clip: text;
+  -webkit-background-clip: text;
+  color: transparent;
+}
+
+* {
+  box-sizing: border-box;
+  font-family: "Roboto", sans-serif;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 0;
+  margin: 0;
+  background-color: #02001F;
+}
+
+h1 {
+  font-size: 64px;
+  text-align: center;
+}
+
+h2 {
+  font-size: 36px;
+  text-align: center;
+}
+p {
+  color: #FBFBFB;
+  font-size: 18px;
+  padding: 0 5vw;
+}
+
+a {
+  font-size: 18px;
+}
+
+b {
+  color: #2DCDFF;
+}
+
+#menuButton {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  position: fixed;
+  top: 15px;
+  right: 20px;
+  height: 36px;
+  width: 50px;
+}
+#menuButton:hover {
+  cursor: pointer;
+}
+#menuButton div {
+  width: 100%;
+  height: 22%;
+  background: linear-gradient(120deg, #00C2FF, #F3FCFF);
+  border-radius: 2px;
+}
+#menuButton div:first-child {
+  width: 75%;
+}
+
+#menu {
+  transition: all 200ms;
+  width: 60vw;
+  margin: 0;
+  padding: 20px;
+  position: fixed;
+  top: 0;
+  left: 20vw;
+  z-index: 1;
+  background: #ffffff;
+  border-radius: 0 0 20px 20px;
+  list-style: none;
+}
+#menu li {
+  text-align: center;
+}
+#menu li a {
+  color: #02001F;
+  font-size: 36px;
+}
+#menu li a:hover {
+  color: #04003b;
+  background: white;
+}
+
+#aboutMe p {
+  text-align: center;
+}
+
+.socials {
+  display: flex;
+  justify-content: center;
+}
+.socials .instaIcon, .socials .githubIcon {
+  height: 60px;
+  width: 60px;
+  margin: 0 10px;
+  cursor: pointer;
+  background: linear-gradient(120deg, #00C2FF, #F3FCFF);
+  border-radius: 10px;
+}
+
+#projectsContainer {
+  display: flex;
+  flex-direction: column;
+}
+#projectsContainer .project {
+  height: 260px;
+  width: 260px;
+  margin: 5px;
+  background: linear-gradient(120deg, #00C2FF, #F3FCFF);
+  cursor: pointer;
+}
+#projectsContainer .project:first-child, #projectsContainer .project:first-child .banner {
+  border-radius: 20px 20px 0 0;
+}
+#projectsContainer .project:last-child {
+  border-radius: 0 0 20px 20px;
+}
+#projectsContainer .project .banner {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 15%;
+  width: 100%;
+  background-color: rgba(255, 255, 255, 0.2);
+  backdrop-filter: blur(2px);
+  -webkit-backdrop-filter: blur(2px);
+  transition: height 300ms ease-out;
+}
+#projectsContainer .project .banner p {
+  margin: 0;
+  padding: 0;
+  font-family: "Saira", sans-serif;
+  font-size: 24px;
+}
+#projectsContainer .project:hover .banner {
+  height: 100%;
+}
+
+footer {
+  height: 30px;
+  width: 100%;
+  margin-top: 80px;
+  background: linear-gradient(120deg, #00FF94, #E9FFF6);
+  text-align: center;
+  color: #02001F;
+}
+
+/*# sourceMappingURL=styles.css.map */
