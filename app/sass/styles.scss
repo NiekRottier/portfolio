@@ -135,6 +135,10 @@ b{
         @extend %blue-text;
         margin: 0 10px;
         cursor: pointer;
+
+        &:hover{
+            text-shadow: black 1px 1px 50px;
+        }
     }
 }
 
