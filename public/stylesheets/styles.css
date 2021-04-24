@@ -63,8 +63,9 @@ b {
   height: 36px;
   width: 50px;
 }
-#menuButton:hover {
+#menuButton:hover div {
   cursor: pointer;
+  box-shadow: black 1px 1px 50px;
 }
 #menuButton div {
   width: 100%;
