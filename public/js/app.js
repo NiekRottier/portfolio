@@ -22,19 +22,19 @@ console.log(window.location.pathname);
 
 // Add events to all the projects
 let projectPigeon = document.getElementById("projectPigeon")
-projectPigeon.addEventListener("click", () => window.location.pathname = "public/projects/projectPigeon.html")
+projectPigeon.addEventListener("click", () => window.location.href = "./projects/projectPigeon.html")
 
 let jsai = document.getElementById("jsai")
-jsai.addEventListener("click", () => window.location.pathname = "public/projects/jsai.html")
+jsai.addEventListener("click", () => window.location.href = "./projects/jsai.html")
 
 let reactNotes = document.getElementById("reactNotes")
-reactNotes.addEventListener("click", () => window.location.pathname = "public/projects/reactNotes.html")
+reactNotes.addEventListener("click", () => window.location.href = "./projects/reactNotes.html")
 
 let backendApi = document.getElementById("backendApi")
-backendApi.addEventListener("click", () => window.location.pathname = "public/projects/backendApi.html")
+backendApi.addEventListener("click", () => window.location.href = "./projects/backendApi.html")
 
 let laravelGallery = document.getElementById("laravelGallery")
-laravelGallery.addEventListener("click", () => window.location.pathname = "public/projects/laravelGallery.html")
+laravelGallery.addEventListener("click", () => window.location.href = "./projects/laravelGallery.html")
 
 let nieuwsradar = document.getElementById("nieuwsradar")
-nieuwsradar.addEventListener("click", () => window.location.pathname = "public/projects/nieuwsradar.html")
+nieuwsradar.addEventListener("click", () => window.location.href = "./projects/nieuwsradar.html")
