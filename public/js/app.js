@@ -18,8 +18,6 @@ function toggleMenu() {
     }
 }
 
-console.log(window.location.pathname);
-
 // Add events to all the projects
 let projectPigeon = document.getElementById("projectPigeon")
 projectPigeon.addEventListener("click", () => window.location.href = "./projects/projectPigeon.html")
