@@ -24,6 +24,7 @@ $borderRadius: 20px;
 
 html{  
     scroll-behavior: smooth;
+    overflow-x: hidden;
 }
 
 body{
@@ -122,6 +123,49 @@ b{
         }
     }
     
+}
+
+#headingImg{
+    $size: 200px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 0;
+    padding: 0;
+
+    .headerImgBorder{
+        position: relative;
+        top: 0;
+        z-index: 1;
+
+        height: $size;
+        width: $size;
+
+        background: linear-gradient(120deg, #00FF94, #E9FFF6);
+        border-radius: 50%;
+        
+        img{
+            position: relative;
+            top: 3px;
+            left: 3px;
+            height: $size - 6px;
+            width: $size - 6px;
+            
+            border-radius: 50%;
+        }
+    }
+
+    hr{
+        position: relative;
+        top: $size / 2;
+
+        height: 3px;
+        width: 100vw;
+        margin: 0;
+
+        background: linear-gradient(120deg, #00FF94, #E9FFF6);
+        border: none;
+    }
 }
 
 #aboutMe p{
