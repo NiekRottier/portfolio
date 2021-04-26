@@ -7,6 +7,7 @@ let menuOverlay = document.getElementById("menuOverlay")
 
 menuButton.addEventListener("click", openMenu)
 menuOverlay.addEventListener("click", closeMenu)
+document.addEventListener("scroll", closeMenu)
 
 function openMenu() {
         menu.style.visibility = "visible"
