@@ -1,3 +1,4 @@
+// Compile Sass to CSS: "sass --watch app/sass:public/stylesheets"
 %green-text{
     background: linear-gradient(120deg, #00FF94, #E9FFF6);
     background-clip: text;
@@ -102,7 +103,7 @@ b{
     position: fixed;
     top: 0;
     left: 20vw;
-    z-index: 1;
+    z-index: 2;
 
     background: #ffffff;
     border-radius: 0 0 $borderRadius $borderRadius;
@@ -113,16 +114,30 @@ b{
 
         a{
             color: $dark-color;
-
+            text-decoration: none;
             font-size: 36px;
             
             &:hover{
-                color: #04003b;
-                background: white;
+                color: #494949;
+                text-decoration: underline;
             }
         }
-    }
+    }   
+}
+
+#menuOverlay{
+    // Hidden in HTML tag
+    transition: all 200ms;
     
+    position: fixed;
+    left: 0;
+    top: 0;
+    z-index: 1;
+
+    height: 100vh;
+    width: 100vw;
+
+    background-color: black;
 }
 
 #headingImg{

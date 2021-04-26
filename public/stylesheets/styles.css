@@ -86,7 +86,7 @@ b {
   position: fixed;
   top: 0;
   left: 20vw;
-  z-index: 1;
+  z-index: 2;
   background: #ffffff;
   border-radius: 0 0 20px 20px;
   list-style: none;
@@ -96,11 +96,23 @@ b {
 }
 #menu li a {
   color: #02001F;
+  text-decoration: none;
   font-size: 36px;
 }
 #menu li a:hover {
-  color: #04003b;
-  background: white;
+  color: #494949;
+  text-decoration: underline;
+}
+
+#menuOverlay {
+  transition: all 200ms;
+  position: fixed;
+  left: 0;
+  top: 0;
+  z-index: 1;
+  height: 100vh;
+  width: 100vw;
+  background-color: black;
 }
 
 #headingImg {

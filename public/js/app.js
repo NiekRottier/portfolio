@@ -1,21 +1,27 @@
 console.log("Hello World!");
 
-// Add event to menu button
+// Open and close menu
+let menu = document.getElementById("menu")
 let menuButton = document.getElementById("menuButton")
-menuButton.addEventListener("click", toggleMenu)
+let menuOverlay = document.getElementById("menuOverlay")
 
-// Hide or show menu depending on state
-function toggleMenu() {
-    let menu = document.getElementById("menu")
+menuButton.addEventListener("click", openMenu)
+menuOverlay.addEventListener("click", closeMenu)
 
-    if(menu.style.visibility == "hidden"){ 
+function openMenu() {
         menu.style.visibility = "visible"
         menu.style.opacity = 0.9
-    }
-    else {
+
+        menuOverlay.style.visibility = "visible"
+        menuOverlay.style.opacity = 0.8
+}
+
+function closeMenu() {
         menu.style.visibility = "hidden"
         menu.style.opacity = 0
-    }
+
+        menuOverlay.style.visibility = "hidden"
+        menuOverlay.style.opacity = 0
 }
 
 // Add events to all the projects
