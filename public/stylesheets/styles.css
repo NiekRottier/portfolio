@@ -41,6 +41,7 @@ h2 {
   text-align: center;
 }
 p {
+  text-align: center;
   color: #FBFBFB;
   font-size: 18px;
   padding: 0 10vw;
@@ -148,10 +149,6 @@ b {
   border: none;
 }
 
-#aboutMe p {
-  text-align: center;
-}
-
 .socials {
   display: flex;
   justify-content: center;
@@ -167,6 +164,7 @@ b {
 #projectsContainer {
   display: flex;
   flex-direction: column;
+  width: 540px;
 }
 #projectsContainer .project {
   height: 260px;
@@ -221,6 +219,18 @@ b {
   display: inline;
 }
 
+@media only screen and (min-width: 1000px) {
+  #projectsContainer {
+    flex-direction: row;
+    flex-wrap: wrap;
+  }
+  #projectsContainer .project:first-child, #projectsContainer .project:first-child img, #projectsContainer .project:first-child .banner {
+    border-radius: 0;
+  }
+  #projectsContainer .project:last-child, #projectsContainer .project:last-child img {
+    border-radius: 0;
+  }
+}
 footer {
   height: 30px;
   width: 100%;

@@ -54,6 +54,7 @@ h2{
 }
 
 p{
+    text-align: center;
     color: $light-color;
     font-size: 18px;
     padding: 0 10vw;
@@ -182,10 +183,6 @@ b{
     }
 }
 
-#aboutMe p{
-    text-align: center;
-}
-
 .socials{
     display: flex;
     justify-content: center;
@@ -204,6 +201,8 @@ b{
 #projectsContainer{
     display: flex;
     flex-direction: column;
+
+    width: 540px;
 
     .project{
         $size: 260px;
@@ -270,7 +269,24 @@ b{
             }
         }
     }
+}
 
+// Change projects container flexbox on bigger screens
+// Shows 2 columns
+@media only screen and (min-width: 1000px){
+    #projectsContainer{
+        flex-direction: row;
+        flex-wrap: wrap;
+
+        .project{  
+            &:first-child, &:first-child img, &:first-child .banner{
+                border-radius: 0;
+            }
+            &:last-child, &:last-child img{
+                border-radius: 0;
+            }
+        }
+    }
 }
 
 footer{
