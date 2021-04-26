@@ -164,6 +164,8 @@ b {
 #projectsContainer {
   display: flex;
   flex-direction: column;
+  align-items: center;
+  flex-wrap: wrap;
   width: 540px;
 }
 #projectsContainer .project {
@@ -222,7 +224,6 @@ b {
 @media only screen and (min-width: 1000px) {
   #projectsContainer {
     flex-direction: row;
-    flex-wrap: wrap;
   }
   #projectsContainer .project:first-child, #projectsContainer .project:first-child img, #projectsContainer .project:first-child .banner {
     border-radius: 0;
