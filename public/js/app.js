@@ -19,20 +19,8 @@ function toggleMenu() {
 }
 
 // Add events to all the projects
-let projectPigeon = document.getElementById("projectPigeon")
-projectPigeon.addEventListener("click", () => window.location.href = "./projects/projectPigeon.html")
+let projects = ["projectPigeon", "jsai", "reactNotes", "backendApi", "laravelGallery", "nieuwsradar"]
 
-let jsai = document.getElementById("jsai")
-jsai.addEventListener("click", () => window.location.href = "./projects/jsai.html")
-
-let reactNotes = document.getElementById("reactNotes")
-reactNotes.addEventListener("click", () => window.location.href = "./projects/reactNotes.html")
-
-let backendApi = document.getElementById("backendApi")
-backendApi.addEventListener("click", () => window.location.href = "./projects/backendApi.html")
-
-let laravelGallery = document.getElementById("laravelGallery")
-laravelGallery.addEventListener("click", () => window.location.href = "./projects/laravelGallery.html")
-
-let nieuwsradar = document.getElementById("nieuwsradar")
-nieuwsradar.addEventListener("click", () => window.location.href = "./projects/nieuwsradar.html")
+projects.forEach(project => {
+    document.getElementById(project).addEventListener("click", () => window.location.href = `./projects/${project}.html`)
+});
