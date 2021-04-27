@@ -5,9 +5,70 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Back-end API</title>
+    <link rel="stylesheet" href="../stylesheets/styles.css">
+
+    <!-- Font-family -->
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Saira&display=swap" rel="stylesheet">
+
+    <!-- Icons -->
+    <script src="https://kit.fontawesome.com/6897fd4fab.js" crossorigin="anonymous"></script>
 </head>
 <body>
-    <a href="../index.html">Home</a>
-    <h1>Back-end API</h1>
+    <div id="backButton">
+        <a href="../index.html">Home</a>
+    </div>
+
+    <div id="menuButton">
+        <div></div>
+        <div></div>
+        <div></div>
+    </div>
+
+    <ul id="menu" style="visibility: hidden; opacity: 0;">
+        <li><a href="#summary">Summary</a></li>
+        <li><a href="#gallery">Gallery</a></li>
+        <li><a href="#technology">Technology</a></li>
+    </ul>
+    <div id="menuOverlay" style="visibility: hidden; opacity: 0;"></div>
+
+    <div id="header">
+        <h1>Back-end API</h1>
+        <h2 class="undertitle">Node.js</h2>
+        <div id="headingImg">
+            <hr>
+            <div class="headerImgBorder">
+                <img src="../img/projectPreviews/backend-api.png">
+            </div>
+        </div>
+    </div>
+
+    <div id="summary">
+        <h2>Summary</h2>
+        <p>Here will be a summary of the project</p>
+    </div>
+
+    <div id="gallery">
+        <h2>Gallery</h2>
+        <div id="imageContainer">
+            <img src="../img/galleryProjectPigeon/pigeonStartscreen.png" class="imageInContainer">
+            <img src="../img/galleryProjectPigeon/level1.png" class="imageInContainer">
+            <img src="../img/galleryProjectPigeon/level2.png" class="imageInContainer">
+            <img src="../img/galleryProjectPigeon/level3.png" class="imageInContainer">
+            <img src="../img/galleryProjectPigeon/deadscreen.png" class="imageInContainer">
+        </div>
+        <div id="backgroundOverlay" hidden></div>
+    </div>
+
+    <div id="technology">
+        <h2>Technology</h2>
+        <p>Here will be a text about the technology used in the project</p>
+    </div>
+    
+    <footer>&copy; 2021 - Niek Rottier</footer>
+    
+    <script src="../js/menu.js"></script>
+    <script src="../js/images.js"></script>
 </body>
 </html>
