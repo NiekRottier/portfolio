@@ -1,5 +1,3 @@
-console.log("Open menu.js")
-
 // Open and close menu
 let menu = document.getElementById("menu")
 let menuButton = document.getElementById("menuButton")

@@ -1,5 +1,3 @@
-console.log("Start images.js")
-
 let images = document.getElementsByClassName("imageInContainer")
 let backgroundOverlay = document.getElementById("backgroundOverlay")
 
@@ -9,7 +7,6 @@ function exeCloseImage(e){ closeImage(e.target) }
 
 // Add eventlisteners to images
 for(let image of images){
-    console.log(image);
     image.addEventListener("click", exeOpenImage)
 }
 
