@@ -352,6 +352,9 @@ b{
             width: 86vw;
 
             object-fit: contain;
+
+            background-color: black;
+            border: solid 1px $light-color;
         }
     }
 }
